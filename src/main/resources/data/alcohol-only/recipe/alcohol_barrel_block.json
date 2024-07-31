@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "Food & Drinks",
+  "pattern": [
+    " # ",
+    "# #",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "tag": "alcohol-only:planks"
+    }
+  },
+  "result": {
+    "id": "alcohol-only:alcohol_barrel_block"
+  },
+  "show_notification": true
+}
