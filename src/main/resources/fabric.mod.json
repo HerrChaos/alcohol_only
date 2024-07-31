@@ -5,31 +5,32 @@
 	"name": "Alcohol-only",
 	"description": "A Mod that adds Alcohol",
 	"authors": [
-		"Chaos, Tennden"
+		"Chaos",
+		"Tennden"
+	],
+	"mantainers": [
+		"Blurryface"
 	],
 	"contact": {
 	},
 	"license": "MIT",
-	"icon": "assets/alcohol-only/icon.png",
+	"icon": "assets/alcoholonly/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"charten.alcoho_only.Alcoholonly"
+			"cc.crss.alcoholonly.AlcoholOnly"
 		],
 		"client": [
-			"charten.alcoho_only.AlcoholonlyClient"
+			"cc.crss.alcoholonly.AlcoholOnlyClient"
 		]
 	},
 	"mixins": [
-		"alcohol-only.mixins.json"
+		"alcohol.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.15.11",
 		"minecraft": "~1.21",
 		"java": ">=21",
 		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
 	}
 }
