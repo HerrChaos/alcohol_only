@@ -1,0 +1,35 @@
+{
+	"schemaVersion": 1,
+	"id": "alcohol-only",
+	"version": "${version}",
+	"name": "Alcohol-only",
+	"description": "A Mod that adds Alcohol",
+	"authors": [
+		"Chaos, Tennden"
+	],
+	"contact": {
+	},
+	"license": "MIT",
+	"icon": "assets/alcohol-only/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"charten.alcoho_only.Alcoholonly"
+		],
+		"client": [
+			"charten.alcoho_only.AlcoholonlyClient"
+		]
+	},
+	"mixins": [
+		"alcohol-only.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
