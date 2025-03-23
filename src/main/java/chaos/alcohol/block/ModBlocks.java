@@ -1,7 +1,6 @@
 package chaos.alcohol.block;
 
 import chaos.alcohol.AlcoholOnly;
-import cc.crss.alcoholonly.block.custom.*;
 import chaos.alcohol.block.custom.*;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
