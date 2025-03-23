@@ -2,26 +2,26 @@
 	"schemaVersion": 1,
 	"id": "alcohol-only",
 	"version": "${version}",
-	"name": "Alcohol-only",
-	"description": "A Mod that adds Alcohol",
+	"name": "Alcohol only",
+	"description": "A Mod that adds Alcohol.",
 	"authors": [
 		"Chaos",
 		"Tennden"
 	],
-	"mantainers": [
+	"contributors": [
 		"Blurryface"
 	],
 	"contact": {
 	},
-	"license": "MIT",
+	"license": "GPLv3",
 	"icon": "assets/alcoholonly/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"cc.crss.alcoholonly.AlcoholOnly"
+          "chaos.alcohol.AlcoholOnly"
 		],
 		"client": [
-			"cc.crss.alcoholonly.AlcoholOnlyClient"
+          "chaos.alcohol.AlcoholOnlyClient"
 		]
 	},
 	"mixins": [
