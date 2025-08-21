@@ -8,9 +8,6 @@
 		"Chaos",
 		"Tennden"
 	],
-	"mantainers": [
-		"Blurryface"
-	],
 	"contact": {
 	},
 	"license": "MIT",
@@ -18,10 +15,10 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"cc.crss.alcoholonly.AlcoholOnly"
+			"charten.alcoholonly.AlcoholOnly"
 		],
 		"client": [
-			"cc.crss.alcoholonly.AlcoholOnlyClient"
+			"charten.alcoholonly.AlcoholOnlyClient"
 		]
 	},
 	"mixins": [
