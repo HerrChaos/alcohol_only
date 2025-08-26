@@ -40,5 +40,4 @@ public class BeerGlassBlock extends Block{
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         return ONE_BOTTLE_SHAPE;
     }
-
 }

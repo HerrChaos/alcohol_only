@@ -33,7 +33,6 @@ public class FullBeerGlassBlock extends Block{
         return ONE_BOTTLE_SHAPE;
     }
 
-
     @Override
     protected ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, BlockHitResult hit) {
         Hand hand = player.getActiveHand();
