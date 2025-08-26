@@ -19,9 +19,6 @@ import net.minecraft.world.World;
 import java.util.Objects;
 
 public class AlcoholBarrelBlockEntity extends BlockEntity {
-
-    //THIS CODE MAY BE GLOBAL
-
     private int FillLevel = 0;
     private String Fluid = "none";
     public AlcoholBarrelBlockEntity(BlockPos pos, BlockState state) {
@@ -37,7 +34,7 @@ public class AlcoholBarrelBlockEntity extends BlockEntity {
     @Override
     protected void writeNbt(NbtCompound nbt, RegistryWrapper.WrapperLookup registryLookup) {
         nbt.putInt("fill level", this.FillLevel);
-        if (this.Fluid != "none") nbt.putString("fluid", this.Fluid);
+        if (!Objects.equals(this.Fluid, "none")) nbt.putString("fluid", this.Fluid);
         super.writeNbt(nbt, registryLookup);
     }
 

@@ -14,9 +14,9 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.shape.VoxelShape;
 
 public class ModBlocks {
-
     public static final Block ALCOHOL_BARREL_BLOCK = registerBlock("alcohol_barrel_block",
             new AlcoholBarrelBlock(AbstractBlock.Settings.create().pistonBehavior(PistonBehavior.NORMAL).sounds(BlockSoundGroup.WOOD).strength(2f)));
 
@@ -27,16 +27,39 @@ public class ModBlocks {
             new FullBeerGlassBlock(AbstractBlock.Settings.create().pistonBehavior(PistonBehavior.DESTROY).sounds(BlockSoundGroup.GLASS).strength(0.1f)));
 
     public static final Block BEER_BLOCK = registerBlock("beer",
-            new BeerBlock(AbstractBlock.Settings.create().pistonBehavior(PistonBehavior.DESTROY).sounds(BlockSoundGroup.GLASS).strength(0.1f)));
+            new AlcoholBottleBlock(AbstractBlock.Settings.create().pistonBehavior(PistonBehavior.DESTROY).sounds(BlockSoundGroup.GLASS).strength(0.1f), Block.createCuboidShape(6.0, 0.0, 6.0, 10.0, 7.0, 10.0),
+                    Block.createCuboidShape(3.0, 0.0, 3.0, 13.0, 11.0, 13.0),
+                    Block.createCuboidShape(3.0, 0.0, 3.0, 13.0, 11.0, 13.0),
+                    Block.createCuboidShape(3.0, 0.0, 3.0, 13.0, 11.0, 13.0),
+                    Block.createCuboidShape(2.0, 0.0, 2.0, 14.0, 11.0, 14.0),
+                    Block.createCuboidShape(1.0, 0.0, 1.0, 15.0, 11.0, 15.0)));
 
     public static final Block VODKA_BLOCK = registerBlock("vodka",
-            new VodkaBlock(AbstractBlock.Settings.create().pistonBehavior(PistonBehavior.DESTROY).sounds(BlockSoundGroup.GLASS).strength(0.1f)));
+            new AlcoholBottleBlock(AbstractBlock.Settings.create().pistonBehavior(PistonBehavior.DESTROY).sounds(BlockSoundGroup.GLASS).strength(0.1f),
+                    Block.createCuboidShape(6.0, 0.0, 6.0, 10.0, 10.0, 10.0),
+                    Block.createCuboidShape(1.0, 0.0, 1.0, 15.0, 10.0, 15.0),
+                    Block.createCuboidShape(1.0, 0.0, 1.0, 15.0, 10.0, 15.0),
+                    Block.createCuboidShape(1.0, 0.0, 1.0, 15.0, 10.0, 15.0),
+                    Block.createCuboidShape(1.0, 0.0, 1.0, 15.0, 10.0, 15.0),
+                    Block.createCuboidShape(1.0, 0.0, 1.0, 15.0, 10.0, 15.0)));
 
     public static final Block WINE_BLOCK = registerBlock("wine",
-            new WineBlock(AbstractBlock.Settings.create().pistonBehavior(PistonBehavior.DESTROY).sounds(BlockSoundGroup.GLASS).strength(0.1f)));
+            new AlcoholBottleBlock(AbstractBlock.Settings.create().pistonBehavior(PistonBehavior.DESTROY).sounds(BlockSoundGroup.GLASS).strength(0.1f),
+                    Block.createCuboidShape(6.0, 0.0, 6.0, 10.0, 11.0, 10),
+                    Block.createCuboidShape(3.0, 0.0, 3.0, 13.0, 11.0, 13.0),
+                    Block.createCuboidShape(3.0, 0.0, 3.0, 13.0, 11.0, 13.0),
+                    Block.createCuboidShape(3.0, 0.0, 3.0, 13.0, 11.0, 13.0),
+                    Block.createCuboidShape(2.0, 0.0, 2.0, 14.0, 11.0, 14.0),
+                    Block.createCuboidShape(1.0, 0.0, 1.0, 15.0, 11.0, 15.0)));
 
     public static final Block JAEGERMEISTER_BLOCK = registerBlock("jaegermeister",
-            new JaegermeisterBlock(AbstractBlock.Settings.create().pistonBehavior(PistonBehavior.DESTROY).sounds(BlockSoundGroup.GLASS).strength(0.1f)));
+            new AlcoholBottleBlock(AbstractBlock.Settings.create().pistonBehavior(PistonBehavior.DESTROY).sounds(BlockSoundGroup.GLASS).strength(0.1f),
+                    Block.createCuboidShape(6.0, 0.0, 6.0, 10.0, 7.0, 10.0),
+                    Block.createCuboidShape(3.0, 0.0, 3.0, 13.0, 11.0, 13.0),
+                    Block.createCuboidShape(3.0, 0.0, 3.0, 13.0, 11.0, 13.0),
+                    Block.createCuboidShape(3.0, 0.0, 3.0, 13.0, 11.0, 13.0),
+                    Block.createCuboidShape(2.0, 0.0, 2.0, 14.0, 11.0, 14.0),
+                    Block.createCuboidShape(1.0, 0.0, 1.0, 15.0, 11.0, 15.0)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
