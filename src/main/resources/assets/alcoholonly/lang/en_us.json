@@ -18,5 +18,6 @@
 
   "entity.minecraft.villager.the_drunk_guy": "Alcoholic",
 
-  "itemgroup.all_the_alcohol": "All the alcohol"
+  "itemgroup.all_the_alcohol": "All the alcohol",
+  "advancements.husbandry.beer.description": "Craft a beer"
 }

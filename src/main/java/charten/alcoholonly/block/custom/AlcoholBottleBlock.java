@@ -113,9 +113,6 @@ public class AlcoholBottleBlock extends Block {
             return WOODED_BOTTLE_SHAPE;
         }
         switch (state.get(BOTTLES)) {
-            default -> {
-                return ONE_BOTTLE_SHAPE;
-            }
             case 2 -> {
                 return TWO_BOTTLE_SHAPE;
             }
@@ -130,6 +127,9 @@ public class AlcoholBottleBlock extends Block {
             }
             case 6 -> {
                 return SIX_BOTTLE_SHAPE;
+            }
+            default -> {
+                return ONE_BOTTLE_SHAPE;
             }
         }
     }
