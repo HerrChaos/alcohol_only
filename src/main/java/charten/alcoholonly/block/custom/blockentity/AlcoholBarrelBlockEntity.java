@@ -46,7 +46,7 @@ public class AlcoholBarrelBlockEntity extends BlockEntity {
     public static void OnUse(BlockState state, World world, BlockPos pos, PlayerEntity player, BlockHitResult hit) {
         if (world.getBlockEntity(pos) != null) {
             AlcoholBarrelBlockEntity blockEntity = (AlcoholBarrelBlockEntity) world.getBlockEntity(pos);
-            if (blockEntity.FillLevel < 8) {
+            if (blockEntity != null && blockEntity.FillLevel < 8) {
                 if (hasItemInHand(player, ModItems.BEER)) {
                     MakeFluidCheck("beer", player, blockEntity);
                 }
@@ -64,7 +64,7 @@ public class AlcoholBarrelBlockEntity extends BlockEntity {
                 }
             }
 
-            if (blockEntity.FillLevel > 0) {
+            if (blockEntity != null && blockEntity.FillLevel > 0) {
                 MakeBottleCheck("beer", ModItems.BEER, player, blockEntity);
                 MakeBottleCheck("wine", ModItems.WINE, player, blockEntity);
                 MakeBottleCheck("vodka", ModItems.VODKA, player, blockEntity);

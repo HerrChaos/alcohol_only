@@ -1,9 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "alcoholonly:vodka_item",
-    "alcoholonly:beer_item",
-    "alcoholonly:jaegermeister_item",
-    "alcoholonly:wine_item"
-  ]
-}

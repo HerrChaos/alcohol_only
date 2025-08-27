@@ -19,7 +19,10 @@
 		],
 		"client": [
 			"charten.alcoholonly.AlcoholOnlyClient"
-		]
+		],
+      "fabric-datagen": [
+        "charten.alcoholonly.datagen.AlcoholOnlyDataGenerator"
+      ]
 	},
 	"mixins": [
 		"alcohol.mixins.json"

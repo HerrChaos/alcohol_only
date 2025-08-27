@@ -14,7 +14,6 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.shape.VoxelShape;
 
 public class ModBlocks {
     public static final Block ALCOHOL_BARREL_BLOCK = registerBlock("alcohol_barrel_block",
